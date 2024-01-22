@@ -80,7 +80,7 @@ class DecisionTree:
         if y.unique().size == 1:
             return Node(value=y.unique()[0])
 
-        # Checking conditions to stop recursion
+        # Checking conditions 
         if len(X.columns) > 0 and depth < self.max_depth and len(list(X.columns)) != sum(list(X.nunique())):
 
             max_info_gain = -np.inf
