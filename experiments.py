@@ -131,8 +131,8 @@ def plot_results(n: int, m: int, iterations: int, dataset_type: Literal['RR', 'D
 	ax.set_ylabel('M')
 	plt.savefig(f'img/{dataset_type}_std_pred_time.png')
 
-# Plot for all four cases of dataset_type with N from 1 to 30 and M from 1 to 10 with average over 3 iterations
-plot_results(50, 15, 5, 'DD')
-plot_results(50, 15, 5, 'RD')
-plot_results(50, 15, 5, 'DR')
-plot_results(50, 15, 5, 'RR')
+# Plot for all four cases of dataset_type with N from 1 to 20 and M from 1 to 10 with average over 3 iterations
+plot_results(20, 5, 3, 'DD')
+plot_results(20, 5, 3, 'RD')
+plot_results(20, 5, 3, 'DR')
+plot_results(20, 5, 3, 'RR')
