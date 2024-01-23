@@ -84,7 +84,7 @@ class DecisionTree:
         if len(X.columns) > 0 and depth < self.max_depth and len(list(X.columns)) != sum(list(X.nunique())):
 
             max_info_gain = -np.inf
-            possible_split = None # This will be used for Real Input
+            possible_split = None # position: This will be used for Real Input
             split_attr = None # This will be used to store the attribute to split on
 
             # Loop over all the attributes to find the best attribute to split on
@@ -92,7 +92,7 @@ class DecisionTree:
                 info_gain = information_gain(y, X[attr], self.criterion)
                 
                 # If the attribute is continuous, we need to store the possible split position
-                if X[attr].dtypes.name != "category":
+                if X[attr].dtypes.name != "category": #not a categorical feature
                     info_gain, possible_split = info_gain[0], info_gain[1]
                 
                 # If the information gain is greater than the maximum information gain, 
