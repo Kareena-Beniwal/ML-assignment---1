@@ -7,7 +7,7 @@ def entropy(Y: pd.Series) -> float:
     """
     Function to calculate the entropy
     """
-    value, counts = np.unique(Y, return_counts=True)
+    value, counts = np.unique(Y, return_counts=True) #value, counts are arrays
     prob = counts / counts.sum()                      
     entropy = 0
     for p in prob:

@@ -24,7 +24,7 @@ y = pd.Series(np.random.randn(N))
 
 
 for criteria in ["information_gain", "gini_index"]:
-    tree = DecisionTree(criterion=criteria)  # Split based on Inf. Gain
+    tree = DecisionTree(criterion=criteria)  
     tree.fit(X, y)
     y_hat = tree.predict(X)
     tree.plot()
