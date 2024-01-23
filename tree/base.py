@@ -49,10 +49,10 @@ class Node:
                     print(f"(X({self.attr}) > {'{:.4f}'.format(self.position)}):")
 
                 print(f"{' ' * gap}{ans}:", end=" ")
-            # Recursively call the function
+            # Recursively call the function to print the entire tree
             self.child_dict[i].printTree(gap+4)
 
-    # Function to recursively plot the Decision Tree
+    # Function to recursively get the predicted value for input 'X' by traversing the DT
     def getVal(self, X: pd.DataFrame) -> float:
         if self.attr == None:
             return self.value
@@ -67,7 +67,7 @@ class Node:
 
 @dataclass
 class DecisionTree:
-    criterion: Literal["information_gain", "gini_index"]  # criterion won't be used for regression
+    criterion: Literal["information_gain", "gini_index"]  # split criteria # criterion won't be used for regression
     max_depth: int = np.inf # The maximum depth the tree can grow to
     root: "Node" = None
 
