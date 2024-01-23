@@ -150,13 +150,5 @@ class DecisionTree:
     def plot(self) -> None:
         """
         Function to plot the tree
-
-        Output Example:
-        ?(X1 > 4)
-            Y: ?(X2 > 7)
-                Y: Class A
-                N: Class B
-            N: Class C
-        Where Y => Yes and N => No
         """
         self.root.printTree()
