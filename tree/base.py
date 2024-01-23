@@ -38,7 +38,7 @@ class Node:
         for i in self.child_dict:
 
             if self.classification == "discrete":
-                print(f"{' ' * (gap-4)}?(X({self.attr}) = {i}):")
+                print(f"{' ' * (gap-4)}(X({self.attr}) = {i}):")
                 if self.child_dict[i].attr == None:
                     print(f"{' ' * gap}", end=" ")
 
@@ -46,7 +46,7 @@ class Node:
                 ans = "Y" if i == "right" else "N"
 
                 if ans == "Y":
-                    print(f"?(X({self.attr}) > {'{:.4f}'.format(self.position)}):")
+                    print(f"(X({self.attr}) > {'{:.4f}'.format(self.position)}):")
 
                 print(f"{' ' * gap}{ans}:", end=" ")
             # Recursively call the function
