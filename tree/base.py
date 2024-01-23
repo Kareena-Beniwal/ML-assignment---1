@@ -23,10 +23,10 @@ class Node:
     Class to represent a node in the decision tree
     """
     classification: Literal["discrete", "continuous"] = None
-    child_dict: dict = field(default_factory=dict) 
-    attr: int = None
-    position: int = None
-    value: float = None
+    child_dict: dict = field(default_factory=dict) #dict holds the child nodes of the current node of the DT (default is an empty dict)
+    attr: int = None #store feature index based on which node is split
+    position: int = None #split position/threshold value
+    value: float = None #predicted value for leaf nodes
 
     # Function to print the Decision Tree
     def printTree(self, gap: int = 4) -> None:
