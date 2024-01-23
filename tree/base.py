@@ -1,10 +1,10 @@
 """
 The current code given is for the Assignment 1.
 You will be expected to use this to make trees for:
-> discrete input, discrete output
-> real input, real output
-> real input, discrete output
-> discrete input, real output
+> discrete input, discrete output - DD
+> real input, real output - RR
+> real input, discrete output - RD
+> discrete input, real output - DR
 """
 from dataclasses import dataclass, field
 from typing import Literal
@@ -12,9 +12,9 @@ from typing import Literal
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from tree.utils import entropy, information_gain, gini_index
+from tree.utils import entropy, information_gain, gini_index #importing customized utility functions
 
-np.random.seed(42)
+np.random.seed(42) #using seed for random no generation for reproducibility
 
 # Class for nodes in the decision tree
 @dataclass
