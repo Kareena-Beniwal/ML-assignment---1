@@ -19,8 +19,11 @@ data = pd.read_csv(url, delim_whitespace=True, header=None,
 
 #Cleaning
 data.columns = ["mpg", "cylinders", "displacement", "horsepower", "weight", "acceleration", "model year", "origin", "car name"]
+
+#mpg - continous variable - target variable
 data["horsepower"]  = data["horsepower"].str.replace("?", "NaN", regex= False).astype(float)
 data["horsepower"].fillna(value= data["horsepower"].mean(), inplace=True) 
+# only horsepower had missing values
 
 #Preparing datasets  
 data = data.drop(["cylinders", "model year", "origin", "car name"],  axis = 1)  #dropping the columns with categorical attributes
