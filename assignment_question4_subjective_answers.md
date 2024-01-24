@@ -21,3 +21,6 @@ So, in total we have 16 plots.
 
 ## Discrete input and Discrete Output
 ![image](https://github.com/Kareena-Beniwal/ML-assignment---1/assets/76513375/f49b154e-9dcb-4b9a-bbca-8fde71394974)
+![image](https://github.com/Kareena-Beniwal/ML-assignment---1/assets/76513375/3f11f036-d319-428c-b661-22b989aa8963)
+
+As we can see from the above plot, the time taken to fit the model increases with the number of samples and number of features. The time taken to predict the model is dependent on the input. The prediction ends soon in some cases and takes a lot of time in some cases. But the average time taken to predict the model is almost increases with respect to the number of samples and number of features.
