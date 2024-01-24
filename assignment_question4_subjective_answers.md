@@ -56,5 +56,30 @@ due to limitation of time and computing power of our system we could only test f
 
 For large values of N and M, we can check the mathematical time complexity of the model in following ways:
 
+The theoretical time complexity varies depending upon the types of input provided.
 
+### Discrete Input:
+M - no of features/attributes
+N - samples
+Depth of the tree in case of discrete inputs = M
+For each level in the decision tree, we require O((M-level)N) runtime to get the nodes. we require O(N) to find the information of (M-level) attributes 
+
+So as we increase the levels from zero to M, the total runtime will be of the order O(NM + (M-1)N + (M-2)N +......+  N ) = O(M(M+1)N) = O(M^2*N)
+
+## Real Input:
+
+In worst-case scenario, when tree becomes unbalanced and each node has only one child, the depth would be equal to the number of samples N. Since, at each level, the algorithm selects a feature and a split point that maximizes information gain, potentially leading to a binary split. If, at each step, one side of the split contains only one sample, the tree depth grows with the number of samples.
+
+In the best-case scenario, where the tree is perfectly balanced, the depth would be of order of O(log N). This would occur when, at each level, the algorithm makes balanced binary splits, dividing the data into two equal parts.
+
+Therefore, Depth of the tree = O(N) [worst case scenario]
+                             = O(log N) [balanced tree- optimal depth]
+
+For each level in the decision tree, to select the attribute and find the split value we need O(M)*O(N logN + N^2) = O(MN^2)
+Here:               NlogN => sorting the instances to find the split
+                    N^2   =>   find the split and information gain
+
+
+Thus , the total runtime = $O(MN^3)$ [worst case scenario]
+                         = O(MN^2(log N)) [balanced tree- optimal depth]
 
