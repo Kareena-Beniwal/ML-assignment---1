@@ -1,4 +1,6 @@
-![image](https://github.com/Kareena-Beniwal/ML-assignment---1/assets/76513375/3c75fcf4-55c9-4ebe-a548-5ab88b74bea2)## Goal
+![image](https://github.com/Kareena-Beniwal/ML-assignment---1/assets/76513375/3c75fcf4-55c9-4ebe-a548-5ab88b74bea2)
+
+## Goal
 
 The target is to plot time taken to fit and predict the Decision tree model against varying N - number of samples and M - number of features.
 We have plotted the time taken to fit and predict the model against M and N. We have also plotted the standard deviation in time taken to fit and predict the model against M and N.
@@ -38,7 +40,9 @@ As we can see from the above plot, the time taken to fit the model increases wit
 ## Real Input and Disceret Output
 ![image](https://github.com/Kareena-Beniwal/ML-assignment---1/assets/76513375/df982ebe-b82e-4ec5-98d0-a30ddeda189d)
 ![image](https://github.com/Kareena-Beniwal/ML-assignment---1/assets/76513375/bdf298f9-98ea-4cf7-a3b6-99c47bdd2d6b)
+
 As we can see from the above plot, the time taken to fit and predict the model increases with both number of samples and number of features. The average time to predict has random flashes which shows dependence on input.
+
 ![image](https://github.com/Kareena-Beniwal/ML-assignment---1/assets/76513375/a0ec6f6f-ae50-472f-b777-d053e01ec361)
 ![image](https://github.com/Kareena-Beniwal/ML-assignment---1/assets/76513375/276250ed-b642-4adc-99dc-6efd56c4d0a8)
 
