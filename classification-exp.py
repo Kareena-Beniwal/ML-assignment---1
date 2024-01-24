@@ -100,7 +100,7 @@ print()
 begin_valid = 0
 max_depth_list = [1,2,3,4,5,6,7,8,9,10]
 
-summary = {0:[], 1:[], 2:[], 3:[], 4:[]}
+summary = {0:[], 1:[], 2:[], 3:[], 4:[]} #stores accuracy for each depth
 for i in range(5):
     X_valid = pd.DataFrame(X[begin_valid:begin_valid + int(0.2*X.shape[0])] )
     y_valid = pd.Series(y[begin_valid: begin_valid+ int(0.2*y.shape[0])] , dtype= "category")
