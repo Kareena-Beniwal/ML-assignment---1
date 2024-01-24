@@ -10,6 +10,7 @@ np.random.seed(42)
 # Code given in the question
 X, y = make_classification(
     n_features=2, n_redundant=0, n_informative=2, random_state=1, n_clusters_per_class=2, class_sep=0.5)
+# by default 100 samples
 
 # For plotting
 plt.scatter(X[:, 0], X[:, 1], c=y)
@@ -93,7 +94,8 @@ for i in range(k):
     begin_test += int(X.shape[0]*0.2)   #Each fold/part will be 20% of the whole dataset
 
 print(pd.DataFrame(data)) 
-# Nested cross validation 
+
+# Nested cross-validation to find the optimum depth of the decision tree.
 print()
 begin_valid = 0
 max_depth_list = [1,2,3,4,5,6,7,8,9,10]
