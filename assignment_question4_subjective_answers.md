@@ -18,3 +18,6 @@ We have 4 plots, one for each of the following
 3. Standard Deviation in Time to fit the model
 4. Standard Deviation in Time to predict the model
 So, in total we have 16 plots.
+
+## Discrete input and Discrete Output
+![image](https://github.com/Kareena-Beniwal/ML-assignment---1/assets/76513375/f49b154e-9dcb-4b9a-bbca-8fde71394974)
