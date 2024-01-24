@@ -1,5 +1,3 @@
-![image](https://github.com/Kareena-Beniwal/ML-assignment---1/assets/76513375/3c75fcf4-55c9-4ebe-a548-5ab88b74bea2)
-
 ## Goal
 
 The target is to plot time taken to fit and predict the Decision tree model against varying N - number of samples and M - number of features.
